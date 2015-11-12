@@ -99,6 +99,56 @@ var compare = function(choice1, choice2) {
 };
 
 compare(userChoice, computerChoice);
+
+----------------------------------------------------------------------------------------------------------------------
+//Building an Address Book
+
+var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-7777",
+    email: "bob.jones@example.com"
+};
+
+var mary = {
+    firstName: "Mary",
+    lastName: "Johnson",
+    phoneNumber: "(650) 888-8888",
+    email: "mary.johnson@example.com"
+};
+
+var contacts = [bob, mary];
+
+function printPerson(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+
+function list() {
+	var contactsLength = contacts.length;
+	for (var i = 0; i < contactsLength; i++) {
+		printPerson(contacts[i]);
+	}
+}
+
+var contactsLength = contacts.length;   
+    
+    for (var i = 0; i < contactsLength; i++) {
+    if(contacts[i].lastName === contacts.lastName) {
+        printPerson(contacts[i]);
+        }
+    }
+        
+function add(firstName, lastName, email, phoneNumber){    
+    contacts[contacts.length] = {
+        firstName: firstName,
+        lastName: lastName,
+        phoneNumber: phoneNumber,
+        email: email
+    } 
+}
+
+add("Dave", "Navarro", "davenavarro@hotmail.com", "600 00 00 00");
+list();
  
 
 
