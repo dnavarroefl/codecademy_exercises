@@ -15,7 +15,7 @@ for (var i = 1; i <= 20; i++) {
     };
 } 
 
------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------
 
 //Methods to set the width and height of a rectangle
 
@@ -35,7 +35,9 @@ rectangle.setWidth = function (newWidth) {
 rectangle.setWidth(8); 
 rectangle.setHeight(6);
 
------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------
+
+//Function to compare people's ages
 
 // Our person constructor
 function Person (name, age) {
@@ -67,7 +69,8 @@ var billy = new Person("Billy", 25);
 
 console.log("The older person is " + olderAge(alice, billy));
 
------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------
+
 //Rock, Paper, Scissors Game
 
 var userChoice = prompt("Do you choose rock, paper or scissors?");
@@ -100,7 +103,7 @@ var compare = function(choice1, choice2) {
 
 compare(userChoice, computerChoice);
 
-----------------------------------------------------------------------------------------------------------------------
+//----------------------------------
 //Building an Address Book
 
 var bob = {
